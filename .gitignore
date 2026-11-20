@@ -1,0 +1,10 @@
+# 登录态（元宝 Cookie）——绝不提交
+.credentials/
+
+# 下载产物
+out/
+result.json
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,45 @@
+{
+  "name": "@agnes-ai/channels-download",
+  "version": "0.1.0",
+  "description": "Download WeChat Channels videos from share links using your own Yuanbao login state. No third-party API, no watermark.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": {
+    "channels-download": "./scripts/sph_download.py"
+  },
+  "scripts": {
+    "start": "python scripts/sph_download.py",
+    "login": "python scripts/login.py",
+    "test": "python -m unittest discover -s tests"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "wechat-channels",
+    "video-download",
+    "sph"
+  ],
+  "dsh": {
+    "bundle": true,
+    "title": {
+      "en": "Channels Download",
+      "zh": "视频号下载"
+    },
+    "description": {
+      "en": "Download WeChat Channels videos from share links. Uses your own Yuanbao login, no external API.",
+      "zh": "从分享链接下载微信视频号视频。使用你自己的元宝登录态，无需外部 API。"
+    },
+    "icon": "./icon.svg",
+    "author": "AI宇宙狂想家",
+    "homepage": "https://github.com/your-org/channels-download",
+    "repository": {
+      "url": "https://github.com/your-org/channels-download"
+    },
+    "category": "media",
+    "labels": ["video", "wechat", "download"]
+  }
+}
